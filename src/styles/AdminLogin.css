@@ -1,0 +1,145 @@
+/* src/styles/AdminLogin.css */
+
+.admin-login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.admin-login-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  max-width: 450px;
+  width: 100%;
+  border: 2px solid rgba(126, 34, 206, 0.2);
+}
+
+.admin-badge-wrapper {
+  text-align: center;
+}
+
+.admin-badge {
+  display: inline-block;
+  background-color: #7e22ce;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.admin-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+.admin-error {
+  background-color: #fee;
+  color: #c33;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #fcc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-form {
+  width: 100%;
+}
+
+.admin-form-group {
+  margin-bottom: 24px;
+}
+
+.admin-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.admin-input:focus {
+  border-color: #7e22ce;
+  outline: none;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #7e22ce 0%, #9333ea 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(126, 34, 206, 0.3);
+}
+
+.admin-button:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(126, 34, 206, 0.4);
+}
+
+.admin-button.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.admin-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-link {
+  color: #7e22ce;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}

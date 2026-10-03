@@ -1,0 +1,104 @@
+/* src/styles/Navigation.css - Header Layout */
+
+.navigation-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.nav-tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1 1 auto;
+  min-width: fit-content;
+  justify-content: center;
+}
+
+.nav-tab.active {
+  background: #667eea;
+  color: white;
+}
+
+.nav-tab.inactive {
+  color: #64748b;
+}
+
+.nav-tab.inactive:hover {
+  background-color: #f1f5f9;
+  color: #667eea;
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.nav-label {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navigation-container {
+    max-width: 100%;
+    flex: 1 1 100%;
+    order: 3;
+  }
+
+  .nav-tab {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-container {
+    gap: 6px;
+  }
+
+  .nav-tab {
+    padding: 8px 14px;
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .nav-icon {
+    font-size: 14px;
+  }
+
+  .nav-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-container {
+    gap: 4px;
+  }
+
+  .nav-tab {
+    padding: 8px 10px;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .nav-label {
+    font-size: 10px;
+  }
+
+  .nav-icon {
+    font-size: 16px;
+  }
+}
